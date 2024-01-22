@@ -30,6 +30,8 @@
                     colors: {
                         clifford: '#da373d',
                         'hockey-primary': '#FF4240',
+                        'hockey-black': '#131318',
+                        'hockey-ash': 'rgba(255, 255, 255, 0.60);',
                     }
                 }
             }
@@ -94,6 +96,33 @@
             </div>
         </nav>
         <!-- navbar ends here -->
+
+        <!-- main header carousel -->
+        <div class="relative">
+            <div class="carousel w-full rounded-2xl">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:absolute w-2/5  bottom-8 right-8 p-8 bg-hockey-black text-white rounded-2xl">
+                <h1 class="text-2xl font-extrabold">Meet all the heroes from the field</h1>
+                <p class="text-base font-medium text-hockey-ash">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                    placerat dolor. Purus urna in
+                    sit nullam proin. </p>
+            </div>
+        </div>
+
     </header>
     <!-- header ends here -->
 
