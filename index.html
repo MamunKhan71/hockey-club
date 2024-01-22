@@ -21,6 +21,13 @@
         .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
+
+        .progress-ring__circle {
+            stroke-dasharray: 400, 400;
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
     </style>
     <!-- Customize Tailwind  -->
     <script>
@@ -31,7 +38,8 @@
                         clifford: '#da373d',
                         'hockey-primary': '#FF4240',
                         'hockey-black': '#131318',
-                        'hockey-ash': 'rgba(255, 255, 255, 0.60);',
+                        'hockey-ash': '#ffffff99',
+                        'hockey-dark-ash': '#13181f',
                     }
                 }
             }
@@ -117,7 +125,8 @@
             </div>
             <div class="lg:absolute w-2/5  bottom-8 right-8 p-8 bg-hockey-black text-white rounded-2xl">
                 <h1 class="text-2xl font-extrabold">Meet all the heroes from the field</h1>
-                <p class="text-base font-medium text-hockey-ash">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                <p class="text-base font-medium text-hockey-ash">Dit amet consectetur. Condimentum dignissim adipiscing
+                    aliquam turpis
                     placerat dolor. Purus urna in
                     sit nullam proin. </p>
             </div>
@@ -125,9 +134,143 @@
 
     </header>
     <!-- header ends here -->
-
     <!-- main starts here -->
-    <main>
+    <main class="container lg:mx-auto font-manrope">
+        <!-- horizontal divider -->
+        <div class="divide-y divide-dashed">
+            <div class="mt-24"></div>
+            <div class="text-center space-y-6 pt-8">
+                <h1 class="text-4xl font-extrabold">Professional Hockeys Club</h1>
+                <p class="text-hockey-dark-ash font-medium text-base w-[602px] lg:mx-auto">Dit amet consectetur.
+                    Condimentum dignissim
+                    adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin. </p>
+            </div>
+            <div class="flex justify-between mt-8 pt-12">
+                <div class="flex flex-col items-center justify-center text-center">
+                    <div class="relative w-40 h-40">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
+                                fill="transparent"></circle>
+                            <circle class="text-orange-500 rotate-1 progress-ring__circle stroke-current"
+                                stroke-width="10" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
+                                stroke-dashoffset="calc(400 - (400 * -87) / 100)"></circle>
+                            <text x="50" y="50" class="font-black" text-anchor="middle"
+                                alignment-baseline="middle">87%</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-semibold text-hockey-black">Prayer Facility</h1>
+                        <p class="w-64 text-base text-hockey-dark-ash">Amet consectetur. Condimentum dignissim
+                            adipiscing .</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center text-center">
+                    <div class="relative w-40 h-40">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
+                                fill="transparent"></circle>
+                            <circle class="text-green-500 rotate-1 progress-ring__circle stroke-current"
+                                stroke-width="10" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
+                                stroke-dashoffset="calc(400 - (400 * -95) / 100)"></circle>
+                            <text x="50" y="50" class="font-black" text-anchor="middle"
+                                alignment-baseline="middle">95%</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-semibold text-hockey-black">Experienced Coach</h1>
+                        <p class="w-64 text-base text-hockey-dark-ash">Amet consectetur. Condimentum dignissim
+                            adipiscing .</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center text-center">
+                    <div class="relative w-40 h-40">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
+                                fill="transparent"></circle>
+                            <circle class="text-amber-500 rotate-1 progress-ring__circle stroke-current"
+                                stroke-width="10" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
+                                stroke-dashoffset="calc(400 - (400 * -90) / 100)"></circle>
+                            <text x="50" y="50" class="font-black" text-anchor="middle"
+                                alignment-baseline="middle">90%</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-semibold text-hockey-black">Senior Player</h1>
+                        <p class="w-64 text-base text-hockey-dark-ash">Amet consectetur. Condimentum dignissim
+                            adipiscing .</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center text-center">
+                    <div class="relative w-40 h-40">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
+                                fill="transparent"></circle>
+                            <circle class="text-blue-500 rotate-1 progress-ring__circle stroke-current"
+                                stroke-width="10" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
+                                stroke-dashoffset="calc(400 - (400 * -80) / 100)"></circle>
+                            <text x="50" y="50" class="font-black" text-anchor="middle"
+                                alignment-baseline="middle">80%</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-semibold text-hockey-black">Training Ground</h1>
+                        <p class="w-64 text-base text-hockey-dark-ash">Amet consectetur. Condimentum dignissim
+                            adipiscing .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-24 text-center space-y-6 py-6">
+                <h1 class="text-4xl font-extrabold">Program Sections</h1>
+                <p class="text-hockey-dark-ash font-medium text-base w-[602px] lg:mx-auto">Dit amet consectetur.
+                    Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin. </p>
+            </div>
+            <div>
+                <div class="grid grid-cols-2 gap-6 mt-12">
+                    <div class="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="./Images/2.png" alt="Shoes" /></figure>
+                        <div class="z-10 text-white space-y-5 flex flex-col justify-end pb-10 pl-10">
+                            <h2 class="text-3xl font-extrabold">Junior Program</h2>
+                            <p class="w-[520px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <div class="card-actions justify-start">
+                                <button class="btn bg-hockey-primary border-none text-xl px-5 text-white">Register
+                                    Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl image-full">
+                        <figure><img class="w-full" src="./Images/3.png" alt="Shoes" /></figure>
+                        <div class="z-10 text-white space-y-5 flex flex-col justify-end pb-10 pl-10">
+                            <h2 class="text-3xl font-extrabold">Teenager Program</h2>
+                            <p class="w-[520px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <div class="card-actions justify-start">
+                                <button class="btn bg-hockey-primary border-none text-xl px-5 text-white">Register
+                                    Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-2 card bg-base-100 shadow-xl image-full">
+                        <figure><img class="w-full" src="./Images/4.png" alt="Shoes" /></figure>
+                        <div class="z-10 text-white space-y-5 flex flex-col justify-end pb-10 pl-10">
+                            <h2 class="text-3xl font-extrabold">Professional Program</h2>
+                            <p class="w-[520px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <div class="card-actions justify-start">
+                                <button class="btn bg-hockey-primary border-none text-xl px-5 text-white">Register
+                                    Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
     <!-- main ends here -->
